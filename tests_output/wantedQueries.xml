@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="1">
+
+  <testsuite name="wantedQueries"
+    errors="1" failures="0" hostname="" id="" package="wantedQueries" skipped="0"
+    tests="1" time="0.01100" timestamp="Thu, 31 Jan 2019 21:34:54 GMT">
+  
+    <testcase name="Enter Wanted Valid Data Length Without Optional Fields" classname="wantedQueries" time="0.01100" assertions="0">
+    </testcase>
+  
+
+  
+    <system-err>
+        Error while running [Wanted Queries / Enter Wanted Valid Data Length Without Optional Fields]:
+
+  TypeError: Cannot read property &#39;setValue&#39; of undefined
+    at Object.Enter Wanted Valid Data Length Without Optional Fields (C:\Users\Red\Documents\DevMtn\module-3-project\tests\wantedQueries.js:28:13)
+    at Module.call (C:\Users\Red\AppData\Roaming\npm\node_modules\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\Red\AppData\Roaming\npm\node_modules\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\Red\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:834:54)
+    at C:\Users\Red\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:863:30
+    at Promise.promise.promiseDispatch (C:\Users\Red\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\Red\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\Red\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\Red\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:125:13)
+    at process._tickCallback (internal/process/next_tick.js:61:11)
+    </system-err>
+  
+
+  
+  </testsuite>
+</testsuites>
