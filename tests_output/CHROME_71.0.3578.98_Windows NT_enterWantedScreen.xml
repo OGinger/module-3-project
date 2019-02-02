@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="0"
-            failures="0"
-            tests="2">
+            failures="1"
+            tests="5">
 
   <testsuite name="enterWantedScreen"
-    errors="0" failures="0" hostname="" id="" package="enterWantedScreen" skipped="0"
-    tests="2" time="14.92" timestamp="Fri, 01 Feb 2019 02:21:31 GMT">
+    errors="0" failures="1" hostname="" id="" package="enterWantedScreen" skipped="0"
+    tests="5" time="24.84" timestamp="Fri, 01 Feb 2019 23:40:06 GMT">
   
-    <testcase name="Enter Wanted Invalid Data Length With Optional Fields" classname="enterWantedScreen" time="8.339" assertions="3">
+    <testcase name="Enter Wanted Valid Data Length Without Optional Fields" classname="enterWantedScreen" time="7.073" assertions="3">
 
     
 
@@ -16,7 +16,34 @@
     
     </testcase>
   
-    <testcase name="Enter Wanted Invalid Character Data for all Fields" classname="enterWantedScreen" time="6.584" assertions="3">
+    <testcase name="Enter Wanted Valid Data Length With Optional Fields" classname="enterWantedScreen" time="4.539" assertions="3">
+
+    
+
+      <failure message="Expected element &lt;span[name=&#34;queryBody&#34;]&gt; text to contain: &#34;whizzbangs.Mf$.123456ABC.Robin Hood 3rd!.M.W.602.015.brown.Sh@p L1fting.2019-01-23.XYZ 123$.VA.11/20/2030.xyZ1234.VA.1/23/2020&#34; in 500ms">    at Object.Enter Wanted Valid Data Length With Optional Fields (C:\Users\Red\Documents\DevMtn\module-3-project\tests\enterWantedScreen.js:62:21)</failure>
+
+    
+    </testcase>
+  
+    <testcase name="Enter Wanted Invalid Data Length Without Optional Fields" classname="enterWantedScreen" time="6.031" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Enter Wanted Invalid Data Length With Optional Fields" classname="enterWantedScreen" time="3.197" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Enter Wanted Invalid Character Data for all Fields" classname="enterWantedScreen" time="4.000" assertions="3">
 
     
 

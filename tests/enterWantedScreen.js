@@ -10,7 +10,7 @@ var goToEnterScreen = (browser) => {
 
 module.exports = {
     beforeEach: browser => {
-        enterWanted = browser.page.enterWantedPage()
+        enterWanted = browser.page.wantedQueriesPage()
         enterWanted.navigate()
 
     },
@@ -18,7 +18,7 @@ module.exports = {
         browser.end()
     },
     //Test Case https://dmutah.atlassian.net/browse/Q9C-46
-    /*'Enter Wanted Valid Data Length Without Optional Fields': browser => {
+    'Enter Wanted Valid Data Length Without Optional Fields': browser => {
         enterWanted
         goToEnterScreen(browser)
         enterWanted
@@ -35,9 +35,9 @@ module.exports = {
             .setValue('@dow', '01/23/2019')
             .click('#saveBtn')
             .expect.element('span[name="queryBody"]').text.to.contain('whizzbangs.Mf$.123456ABC.Robin Hood 3rd!.M.W.602.015.brown.Sh@p L1fting.2019-01-23......').before(500)
-    },*/
+    },
     //Test Case https://dmutah.atlassian.net/browse/Q9C-47
-    /*'Enter Wanted Valid Data Length With Optional Fields': browser => {
+    'Enter Wanted Valid Data Length With Optional Fields': browser => {
         enterWanted
         goToEnterScreen(browser)
         enterWanted
@@ -60,9 +60,9 @@ module.exports = {
             .setValue('@lpExpDate', '11/23/2020')
             .click('#saveBtn')
             .expect.element('span[name="queryBody"]').text.to.contain('whizzbangs.Mf$.123456ABC.Robin Hood 3rd!.M.W.602.015.brown.Sh@p L1fting.2019-01-23.XYZ 123$.VA.11/20/2030.xyZ1234.VA.1/23/2020').before(500)
-    },*/
+    },
     //Test Case https://dmutah.atlassian.net/browse/Q9C-48
-    /*'Enter Wanted Invalid Data Length Without Optional Fields': browser => {
+    'Enter Wanted Invalid Data Length Without Optional Fields': browser => {
         enterWanted
         goToEnterScreen(browser)
         enterWanted
@@ -79,7 +79,7 @@ module.exports = {
             .setValue('@dow', '01/23/19')
             .click('#saveBtn')
             .expect.element('#validHeader').text.to.contain('Errors Received').before(500)
-    },*/
+    },
     //https://dmutah.atlassian.net/browse/Q9C-49
     'Enter Wanted Invalid Data Length With Optional Fields': browser => {
         enterWanted

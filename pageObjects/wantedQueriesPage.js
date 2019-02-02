@@ -19,6 +19,11 @@ module.exports = {
        lp: 'input[name="licInput"]',
        lpState: 'input[name="lisInput"]',
        lpExpDate: 'input[name="lidInput"]',
+       //modify screen field
+       wid: 'input[name="widInput"]',
+       //cancel screen fields
+       reasonCan: 'input[name="resInput"]',
+       dateCan: 'input[name="datInput"]',
 
     },
 }
